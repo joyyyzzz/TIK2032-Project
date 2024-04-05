@@ -115,3 +115,11 @@ body {
 .blog-box {
     margin-top: 20px;
 }
+
+.blog-title h2 {
+    color: #1b1b1b;
+}
+
+.blog-text p {
+    color: #fff;
+}
