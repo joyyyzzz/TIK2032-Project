@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../Gallery/pexels-pixabay-531756.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navigator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: auto;
+    margin-bottom: 0;
+    max-width: 1200px;
+    padding: 1rem 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1b1b1b;
+    transition: all .3s ease;
+}
+
+.link a:hover::after{
+    width: 80%;
+}
+
+.logo img {
+    max-width: 60px;
+    transition: all .3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+.footer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    font-size: .8rem;
+    color: #222831;
+    text-align: center;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.header p {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.header h2 {
+    color: #76ABAE;
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: 0;
+    padding: 5rem 2rem;
+    background: rgba(0, 0, 0, 0.56);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
+    min-width: 1200px;
+}
+
+
+.column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+} 
+
+
+.column .row {
+    position: relative;
+    display: flex;
+    padding: 20px 0;
+    margin-bottom: 1rem;
+    color: #18181B;
+    transition: all .3s ease;
+}
+
+.column .row .icon {
+    min-width: 50px;
+    height: 50px;
+    background: #fff;
+    color: #18181B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.column .row .text {
+    display: flex;
+    margin-left: 10px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.column .row .text h5 {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.column .row .text p {
+    font-weight: 500;
+    color: #1b1b1b;
+}
+
+.column .row .fb {
+    min-width: 50px;
+    height: 50px;
+    background: #fff;
+    color: #18181B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.column .row .fb:hover {
+    background: rgb(29, 81, 255);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.column .row .ig {
+    min-width: 50px;
+    height: 50px;
+    background: #fff;
+    color: #18181B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.column .row .ig:hover {
+    /* Apply linear gradient as text color */
+    background: linear-gradient(90deg, #F58529, #ED1D24, #9D1E59, #5A1665, #23166B);
+    /* Set background clip to text to make the gradient visible */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Transparent background to ensure the text remains visible */
+    color: transparent;
+}
+
+
+.column .row .wa {
+    min-width: 50px;
+    height: 50px;
+    background: #fff;
+    color: #18181B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.column .row .wa:hover {
+    background: rgb(59, 255, 59);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.column form {
+    padding: 40px;
+    margin-top: 2rem;
+    background-color: #fff;
+}
+
+.column .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.column .inputBox input,
+.column .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #222831;
+    outline: none;
+    resize: none;
+}
+
+.column .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.column .inputBox input:focus ~ span,
+.column .inputBox input:valid ~ span,
+.column .inputBox textarea:focus ~ span,
+.column .inputBox textarea:valid ~ span
+{
+    color: #76ABAE;
+    font-size: 12px;
+    transform: translateY(-25px);
+}
+
+.column .inputBox input[type="submit"]{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #76ABAE;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.column .inputBox input[type="submit"]:hover {
+    background-color: #466c6e;
+    transform: scale(1.05);
+}
+
+/* Tambahkan animasi untuk judul "Contact" */
+.header h2 {
+    color: #76ABAE;
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-align: center;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* Definisikan animasi fadeInUp */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
