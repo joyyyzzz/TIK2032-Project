@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../Gallery/pexels-pixabay-531756.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navigator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: auto;
+    margin-bottom: 0;
+    max-width: 1200px;
+    padding: 1rem 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1b1b1b;
+    transition: all .3s ease;
+}
+
+.link a:hover::after{
+    width: 80%;   
+}
+
+.logo img {
+    max-width: 60px;
+    transition: all .3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+.footer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    font-size: .8rem;
+    color: #222831;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: 0;
+    padding: 5rem 2rem;
+    background: rgba(0, 0, 0, 0.56);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
+    max-width: 1200px;
+}
+
+.blog-head {
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.blog-head h1 {
+    color: #76ABAE;
+}
+
+.blog-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+}
+
+.blog-box {
+    margin-top: 20px;
+}
+
+.blog-title h2 {
+    color: #1b1b1b;
+}
+
+.blog-text p {
+    color: #fff;
+}
+
+/* Tambahkan animasi untuk setiap huruf pada judul */
+.blog-head h1 span {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* Definisikan animasi fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
